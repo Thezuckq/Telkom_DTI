@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import './index.css';
-import { setCookie } from '../../utils/cookie';
-import { auth } from '../../services';
+import React, { useState } from "react";
+import "./index.css";
+import { setCookie } from "../../utils/cookie";
+import { auth } from "../../services";
 
 const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const [isLoginLoading, setLoginLoading] = useState(false);
 
@@ -17,8 +17,8 @@ const Login = () => {
         const cookieToken = res.token;
         // const cookieUser = res.data.user;
         // setCookie('userData', JSON.stringify(cookieUser), 10000);
-        setCookie('token', JSON.stringify(cookieToken), 10000);
-        window.location.replace('/product');
+        setCookie("token", JSON.stringify(cookieToken), 10000);
+        window.location.replace("/product");
       })
       .catch((err) => {
         console.log(err);
@@ -52,9 +52,6 @@ const Login = () => {
                     setUsername(e.target.value);
                   }}
                 />
-                <small id="emailHelp" className="form-text text-muted">
-                  We never share your username with anyone else.
-                </small>
               </label>
             </div>
 
@@ -70,9 +67,6 @@ const Login = () => {
                     setPassword(e.target.value);
                   }}
                 />
-                <small id="emailHelp" className="form-text text-muted">
-                  We never share your Password with anyone else.
-                </small>
               </label>
             </div>
             <button

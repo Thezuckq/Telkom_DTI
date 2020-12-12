@@ -1,13 +1,21 @@
 .global-container{
-	height:93.4vh;
+	height:90vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color:#DDF8D6 ;
 }
 .login-form{ 
-	width:330px;
-  margin:10px;
-  height: 400px;
+  width:1200px;
+  margin: 40px;
+  height: 600px;
   border-radius: 20px !important;
+  align-items: center;
+  justify-content: center;
 }
+
+.card-body{ 
+	margin: 120px;
+	vertical-align: middle;
+	justify-content: center;
+  }
