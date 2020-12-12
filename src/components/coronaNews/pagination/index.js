@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-plusplus */
-import React from 'react';
+import React from "react";
 
 const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
   const pageNumbers = [];
@@ -16,6 +16,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
           return (
             <li key={number} className="page-item">
               <a
+                style={{ color: "#e7e7de", backgroundColor: "#0f3057" }}
                 onClick={() => {
                   return paginate(number);
                 }}

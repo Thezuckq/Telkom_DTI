@@ -33,7 +33,7 @@ const Login = () => {
     <div className="global-container">
       <div className="card login-form shadow p-3">
         <div className="card-body">
-          <h3 className="card-title text-center">Log in to DTI Task</h3>
+          <h3 className="card-title text-center">User Login</h3>
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -73,9 +73,10 @@ const Login = () => {
               type="submit"
               value="submit"
               className="btn btn-primary btn-block mt-2 mb-2"
+              id="buttonSubmit"
               disabled={isLoginLoading}
             >
-              Sign in
+              Login
             </button>
           </form>
         </div>

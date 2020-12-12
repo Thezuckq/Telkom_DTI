@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-one-expression-per-line */
-import React from 'react';
+import React from "react";
 
 const Posts = ({ posts, loading }) => {
   if (loading) {
-    return <h2 className="text-center">Loading...</h2>;
+    return <h4 className="text-center">Tunggu bentar...</h4>;
   }
 
   return (

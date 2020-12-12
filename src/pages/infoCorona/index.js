@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
-import { CoronaNews } from '../../components';
+import React, { useState } from "react";
+import { CoronaNews } from "../../components";
+import "./index.css";
 
 const InfoCorona = () => {
   return (

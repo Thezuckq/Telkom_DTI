@@ -1,13 +1,15 @@
-import React from 'react';
-import './style.css';
-import { image2, imageExample } from '../../assets';
+import React from "react";
+import "./style.css";
+import { bg1, bg2, image2, imageExample } from "../../assets";
 
 const Home = () => {
   return (
     <div className="pageHome-wrapper">
-      <h1>Welcome Home!</h1>
-      <img className="pageHome-img1" alt="background1" src={imageExample} />
-      <img className="pageHome-img2" alt="background2" src={image2} />
+      <div className="cont">
+        <h1 className="centered">Welcome To My Page</h1>
+        <img className="pageHome-img1" alt="background1" src={bg1} />
+        <img className="pageHome-img2" alt="background2" src={bg2} />
+      </div>
     </div>
   );
 };

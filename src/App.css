@@ -3,16 +3,16 @@
 }
 
 .header {
-  background-color: #335d2d;
+  background-color: #0f3057;
 }
 
 .menu {
   display: inline-block;
   padding: 20px;
-  color: white;
+  color: #e7e7de;
 }
 
 .menu:hover {
-  background-color: white;
-  color: green;
+  background-color: #e7e7de;
+  color: #00587a;
 }

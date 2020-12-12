@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-one-expression-per-line */
-import React, { useEffect, useState } from 'react';
-import app from '../../services/firebase';
-import Posts from './posts';
-import Pagination from './pagination';
-import 'firebase/database';
+import React, { useEffect, useState } from "react";
+import app from "../../services/firebase";
+import Posts from "./posts";
+import Pagination from "./pagination";
+import "firebase/database";
 
 const CoronaNews = () => {
   const [posts, setPosts] = useState([]);
@@ -13,8 +13,8 @@ const CoronaNews = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    const db = app.database().ref('news');
-    db.on('value', (snapshot) => {
+    const db = app.database().ref("news");
+    db.on("value", (snapshot) => {
       const firebaseNews = snapshot.val();
       setPosts(firebaseNews.data);
       setIsLoading(false);
@@ -33,14 +33,16 @@ const CoronaNews = () => {
   };
 
   return (
-    <div className="container mt-5 shadow p-3 mb-5 bg-white rounded">
-      <h1 className="text-center">Info Corona</h1>
+    <div>
+      <h1 style={{ color: "#0f3057", padding: "16px" }} className="text-center">
+        Berita Corona Terkini
+      </h1>
+      <Posts posts={currentPost} loading={isLoading} />
       <Pagination
         postsPerPage={postsPerPage}
         totalPosts={posts.length}
         paginate={paginate}
       />
-      <Posts posts={currentPost} loading={isLoading} />
     </div>
   );
   // console.log('postActivity');
