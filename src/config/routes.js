@@ -9,7 +9,7 @@ import {
 
 const routes = [
   {
-    path: "/profile/:profileId",
+    path: "/profileId",
     component: ProfileId,
     isPublic: false,
   },

@@ -4,7 +4,7 @@ import { isUserAuthenticated } from "../../utils/cookie";
 import "./index.css";
 
 const Header = () => {
-  const listMenu = ["home", "product", "infoCorona"];
+  const listMenu = ["home", "product", "ProfileId", "infoCorona"];
   const logout = () => {
     const cookie = document.cookie.split("; ").find((row) => {
       return row.startsWith("token");
