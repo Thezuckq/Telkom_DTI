@@ -8,7 +8,7 @@ const ProfileId = () => {
     <div>
       <h1>Profile User</h1>
       <div>
-        <span>{`Halo ${profileId}`}</span>
+        <span>{`Halo kamu ${profileId}`}</span>
       </div>
     </div>
   );

@@ -6,7 +6,6 @@ import "./product.css";
 
 const Product = () => {
   const [dataProduct, setDataProduct] = useState([]);
-  // const [searchKey, setSearchKey] = useState('');
   const [activePage, setActivePage] = useState(1);
   const [limit, setLimit] = useState(10);
   const [offset, setOffset] = useState(0);
@@ -44,17 +43,16 @@ const Product = () => {
 
   return (
     <div>
-      {/* <input
+      <input
+        className="searchField"
         type="text"
         placeholder="Search.."
         onChange={(e) => {
           setSearchKey(e.target.value);
         }}
-      /> */}
+      />
       {productLoading ? <p>product Loading...</p> : listProduct}
       <ReactPaginate
-        // previousLabel="&laquo;"
-        // nextLabel="&raquo;"
         breakLabel="..."
         breakClassName="break-me"
         pageCount={5}

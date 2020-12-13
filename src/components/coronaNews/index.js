@@ -22,12 +22,12 @@ const CoronaNews = () => {
   }, []);
 
   // console.log(posts);
-  // Get Current Posts
+  // Get post
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPost = posts.slice(indexOfFirstPost, indexOfLastPost);
 
-  // Change page
+  // Ganti page
   const paginate = (pageNumber) => {
     return setCurrentPage(pageNumber);
   };

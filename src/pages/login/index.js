@@ -82,38 +82,6 @@ const Login = () => {
         </div>
       </div>
     </div>
-    // <div className="loginPage">
-    //   <h2> Login Page</h2>
-    //   <form
-    //     className="login_form"
-    //     onSubmit={(e) => {
-    //       e.preventDefault();
-    //       onSubmitLogin();
-    //     }}
-    //   >
-    //     <label htmlFor="username">
-    //       Username :
-    //       <input
-    //         type="text"
-    //         value={username}
-    //         onChange={(e) => {
-    //           setUsername(e.target.value);
-    //         }}
-    //       />
-    //     </label>
-    //     <label htmlFor="password">
-    //       Password :
-    //       <input
-    //         type="password"
-    //         value={password}
-    //         onChange={(e) => {
-    //           setPassword(e.target.value);
-    //         }}
-    //       />
-    //     </label>
-    //     <input type="submit" value="Submit" disabled={isLoginLoading} />
-    //   </form>
-    // </div>
   );
 };
 

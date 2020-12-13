@@ -1,52 +1,40 @@
 import {
   Home,
   // Profile,
-  // Contact,
   Login,
   ProfileId,
   InfoCorona,
   Product,
-  // DetailDate,
-} from '../pages';
+} from "../pages";
 
 const routes = [
   {
-    path: '/profile/:profileId',
+    path: "/profile/:profileId",
     component: ProfileId,
     isPublic: false,
   },
-  // {
-  //   path: '/profile',
-  //   component: Profile,
-  //   isPublic: false,
-  // },
   {
-    path: '/product',
+    path: "/product",
     component: Product,
     isPublic: false,
   },
   {
-    path: '/home',
+    path: "/home",
     component: Home,
     isPublic: true,
   },
   {
-    path: '/login',
+    path: "/login",
     component: Login,
     isPublic: true,
   },
-  // {
-  //   path: '/infoCorona/:dateId',
-  //   component: DetailDate,
-  //   isPublic: true,
-  // },
   {
-    path: '/infoCorona',
+    path: "/infoCorona",
     component: InfoCorona,
     isPublic: true,
   },
   {
-    path: '/',
+    path: "/",
     component: Home,
     isPublic: true,
   },

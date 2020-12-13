@@ -15,4 +15,5 @@
 .menu:hover {
   background-color: #e7e7de;
   color: #00587a;
+  border-radius: 16px;
 }
